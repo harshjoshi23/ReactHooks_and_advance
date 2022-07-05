@@ -18,6 +18,12 @@ const UseStateArray = () => {
           );
         })
       }
+      {/* only to invoke when we click the button
+      So we are using an arrowfunction to achieve that
+      The button is callin the setPeople function and the value we are adding is 
+      an empty array. (Makes Sense.)
+      */}
+      <button className="btn" onClick={() => setPeople([])}></button>
     </>
   );
 };
