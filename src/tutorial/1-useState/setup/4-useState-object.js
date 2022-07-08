@@ -8,8 +8,10 @@ const UseStateObject = () => {
   });
 
   const changeMessage = () => {
-    //invoking set person
-    setPerson("HelloWorld");
+    //orignally we have an obj so we need to change
+    // the state properly
+    //using a spread operator
+    setPerson({ ...person, message: "Wassup" });
   };
   return (
     <>
